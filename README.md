@@ -23,9 +23,9 @@ Flow:
 - Type: GET
 - Response: JSON
 - Example-Response:
-    {
+    - {
         "id": "fec42e0311f7e1f0"
-    }
+      }
 ## ---------------------------------------------------
 2) Generate Random Face
 Description: Generate a random image for you based on the given parameters
