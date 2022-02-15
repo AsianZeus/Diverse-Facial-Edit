@@ -3,7 +3,7 @@
 This API serve the purpose of generating random real looking images of human faces which can be edited in latent space and can generate new images from the given parameters with extra feauture of removing background and faceswap.</p>
 
 
-# ----------------------------------------------------------------
+# ---------------------------------------------------------
 ## API Documentation:
 Flow:
 1) Login [Generate a Session ID]
@@ -13,7 +13,7 @@ Flow:
 5) Local Edit (i.e Ethenicity, Hair Color, Hair Highlights, Hairstyle, Facial Hair, Accesories, Emotions, Eye Color, Eye Size, Face Shape, Makeup, Ear Size, Lip Size, Facespots)
 6) Background Removal
 7) Face Swap
-# -----------------------------------------------------------------
+# ---------------------------------------------------------
 
 ## API Calls
 #### -----------------------------------------------------------------
@@ -97,11 +97,11 @@ Flow:
     - Body-Type: JSON 
     - Body:
 
-        {
-            "id":"fec42e0311f7e1f0",
-            "latent_weight":7
-            "on_original":0
-        }
+            {
+                "id":"fec42e0311f7e1f0",
+                "latent_weight":7
+                "on_original":0
+            }
 
     - Parameters-Description:
         * id: Session ID generated via /login
