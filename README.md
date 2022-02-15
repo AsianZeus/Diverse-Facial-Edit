@@ -17,17 +17,19 @@ This API serve the purpose of generating random real looking images of human fac
 
 ## API Calls
 ## ---------------------------------------------------
-> 1) Login:
+1) Login:
 - Description: Generate a session id for you for 15 mins of usage
 - Url: /login
 - Type: GET
 - Response: JSON
 - Example-Response:
-    > {
-    >   "id": "fec42e0311f7e1f0"
-    > }
+
+        {
+            "id": "fec42e0311f7e1f0"
+        }
+        
 ## ---------------------------------------------------
-> 2) Generate Random Face
+2) Generate Random Face
 Description: Generate a random image for you based on the given parameters
 Url: /generateRandomFace
 Type: POST
