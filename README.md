@@ -3,9 +3,9 @@ Diverse Facial Edit with StyleGAN, StyleGAN2, StyleClip with ViT, and Other Feat
 This API serve the purpose of generating random real looking images of human faces which can be edited in latent space and can generate new images from the given parameters with extra feauture of removing background and faceswap.
 
 
-#-------------------------------------------------------------------------------------------------------------
-API Documentation:
-#-------------------------------------------------------------------------------------------------------------
+# --------------------------------------------------
+## API Documentation:
+# --------------------------------------------------
 Flow:
 1) Login [Generate a Session ID]
 2) Generate random faces of male female or randomly
@@ -14,20 +14,21 @@ Flow:
 5) Local Edit (i.e Ethenicity, Hair Color, Hair Highlights, Hairstyle, Facial Hair, Accesories, Emotions, Eye Color, Eye Size, Face Shape, Makeup, Ear Size, Lip Size, Facespots)
 6) Background Removal
 7) Face Swap
-#-------------------------------------------------------------------------------------------------------------
+# ---------------------------------------------------
 
-API Calls
-
-1) Login:
-Description: Generate a session id for you for 15 mins of usage
-Url: /login
-Type: GET
-Response: JSON
-Example-Response:
-    {
-        "id": "fec42e0311f7e1f0"
-    }
-#-------------------------------------------------------------------------------------------------------------
+# ---------------------------------------------------
+## API Calls
+# ---------------------------------------------------
+- 1) Login:
+- Description: Generate a session id for you for 15 mins of usage
+- Url: /login
+- Type: GET
+- Response: JSON
+- Example-Response:
+    -     {
+    -         "id": "fec42e0311f7e1f0"
+    -     }
+# ---------------------------------------------------
 2) Generate Random Face
 Description: Generate a random image for you based on the given parameters
 Url: /generateRandomFace
@@ -49,7 +50,7 @@ Example-Response:
     {
         "status": "Success"
     }
-#-------------------------------------------------------------------------------------------------------------
+# ---------------------------------------------------
 3) Gloal Edit:
 Description: Allows you to gloablly edit your generated image based on parametric values given, The global edit will take the parameters in bulk and then edit your image with multiple facial edits parallely,
 NOTE: In case you'll do this api call again, it will edit your image from scratch (i.e generated image and not the recently edited image) so you can play with different permutation combination of gobal edits in one go.
@@ -79,7 +80,7 @@ Example-Response:
     {
         "status": "Success"
     }
-#-------------------------------------------------------------------------------------------------------------
+# ---------------------------------------------------
 4) Pitch Edit:
 Description: Allows you to edit your face's headpose pitch, i.e move in up or down direction.
 NOTE: You cannot do any globalEdits after calling pitchEdit.
@@ -102,7 +103,7 @@ Example-Response:
     {
         "status": "Success"
     }
-#-------------------------------------------------------------------------------------------------------------
+# ---------------------------------------------------
 5) Local Edit:
 Description: Allows you to locally edit your image based on parametric values given.
 NOTE: You cannot do any globalEdits after calling localEdit.
@@ -147,7 +148,7 @@ Example-Response:
     {
         "status": "Success"
     }
-#-------------------------------------------------------------------------------------------------------------
+# ---------------------------------------------------
 6) Get Image
 Description: Returns the edited Image, you can call this after you make other api calls and get a success response to get the edited image.
 Url: /getImage
@@ -164,7 +165,7 @@ Parameters-Description:
     a) id: Session ID generated via /login
     b) get_original: Takes a boolean value, to send the original image or edited image.
 Response: Image
-#-------------------------------------------------------------------------------------------------------------
+# ---------------------------------------------------
 7) Remove Background:
 Description: Removes the backgroud from the given image.
 Url: /removeBackground
@@ -184,7 +185,7 @@ Example-Response:
     {
         "status": "Success"
     }
-#-------------------------------------------------------------------------------------------------------------
+# ---------------------------------------------------
 7) Swap Face:
 Description: Swap faces of given images.
 Url: /faceSwap
